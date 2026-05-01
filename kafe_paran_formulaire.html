@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kafé Paran - Questionnaire</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f6f7f5; margin:0; color:#1f2933; }
+    main { max-width: 860px; margin: 24px auto; background:#fff; padding: 28px; border-radius: 16px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+    h1 { text-align:center; margin-top:0; color:#2f6f5e; }
+    section { border:1px solid #d9e6df; border-radius:12px; padding:18px; margin:18px 0; }
+    h2 { margin-top:0; color:#2f6f5e; font-size:1.2rem; }
+    .question { margin:16px 0 8px; font-weight:600; }
+    label { display:inline-block; margin:8px 18px 8px 0; cursor:pointer; }
+    input[type="text"], textarea { width:100%; box-sizing:border-box; padding:10px; border:1px solid #cbd5d1; border-radius:8px; font-size:1rem; }
+    textarea { min-height:80px; resize:vertical; }
+    .actions { display:flex; gap:12px; justify-content:center; margin-top:24px; flex-wrap:wrap; }
+    button { background:#2f6f5e; color:#fff; border:0; border-radius:8px; padding:12px 18px; font-size:1rem; cursor:pointer; }
+    button.secondary { background:#6b7280; }
+    @media print { body { background:white; } main { box-shadow:none; margin:0; max-width:none; } button { display:none; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Kafé Paran - Questionnaire</h1>
+  <form>
+    <section>
+      <h2>1 - Humeur</h2>
+      <p class="question">En un mot, comment vous sentez-vous aujourd'hui ?</p>
+      <label><input type="radio" name="humeur" value="Bien"> Bien</label>
+      <label><input type="radio" name="humeur" value="Très bien"> Très bien</label>
+      <label><input type="radio" name="humeur" value="Stressé(e)"> Stressé(e)</label>
+    </section>
+
+    <section>
+      <h2>2 - Famille</h2>
+      <p class="question">Vous êtes représentant légal :</p>
+      <label><input type="checkbox" name="famille" value="Parents"> Parents</label>
+      <label><input type="checkbox" name="famille" value="Grands-parents"> Grands-parents</label>
+      <label><input type="checkbox" name="famille" value="Tantes"> Tantes</label>
+      <label><input type="checkbox" name="famille" value="Oncles"> Oncles</label>
+      <label><input type="checkbox" name="famille" value="Famille d'accueil"> Famille d'accueil</label>
+    </section>
+
+    <section>
+      <h2>3 - Historique</h2>
+      <p class="question">Connaissez-vous la date de création de l’établissement IME Romaine Savon ?</p>
+      <label><input type="radio" name="creation" value="1971"> 1971</label>
+      <label><input type="radio" name="creation" value="1982"> 1982</label>
+      <label><input type="radio" name="creation" value="2001"> 2001</label>
+    </section>
+
+    <section>
+      <h2>4 - Perception du sujet</h2>
+      <p class="question">Quel est le premier mot qui vous vient à la pensée lorsque vous entendez “vie affective ou sexuelle” ?</p>
+      <input type="text" name="mot_vie_affective" placeholder="Votre réponse">
+
+      <p class="question">Avez-vous déjà abordé le sujet de la sexualité avec votre enfant ?</p>
+      <label><input type="radio" name="aborde_sexualite" value="Oui"> Oui</label>
+      <label><input type="radio" name="aborde_sexualite" value="Non"> Non</label>
+
+      <p class="question">Ce sujet vous semble :</p>
+      <label><input type="radio" name="difficulte_sujet" value="Simple"> Simple</label>
+      <label><input type="radio" name="difficulte_sujet" value="Plutôt difficile"> Plutôt difficile</label>
+      <label><input type="radio" name="difficulte_sujet" value="Très difficile"> Très difficile</label>
+    </section>
+
+    <section>
+      <h2>5 - Quotidien</h2>
+      <p class="question">En lien avec le sujet de la sexualité, quelles difficultés rencontrez-vous ?</p>
+      <p class="question">Pour en parler, êtes-vous à l’aise ?</p>
+      <label><input type="radio" name="a_laise" value="Oui"> Oui</label>
+      <label><input type="radio" name="a_laise" value="Non"> Non</label>
+
+      <p class="question">Pour les comportements de votre enfant, par exemple pulsions ou masturbations :</p>
+      <label><input type="checkbox" name="difficultes" value="Inquiétude"> Inquiétude</label>
+      <label><input type="checkbox" name="difficultes" value="Gêne"> Gêne</label>
+      <label><input type="checkbox" name="difficultes" value="Manque de soutien"> Manque de soutien</label>
+      <label><input type="checkbox" name="difficultes" value="Autres"> Autres</label>
+    </section>
+
+    <section>
+      <h2>6 - Informations</h2>
+      <p class="question">Que vous manque-t-il pour mieux accompagner votre enfant ?</p>
+      <label><input type="checkbox" name="besoins" value="Informations"> Informations / supports écrits</label>
+      <label><input type="checkbox" name="besoins" value="Outils"> Outils / livres / pictogrammes</label>
+      <label><input type="checkbox" name="besoins" value="Accompagnement"> Accompagnement</label>
+      <label><input type="checkbox" name="besoins" value="Ateliers"> Ateliers</label>
+      <label><input type="checkbox" name="besoins" value="Autres"> Autres</label>
+
+      <p class="question">Quel est votre plus grand défi en ce moment ?</p>
+      <textarea name="grand_defi" placeholder="Votre réponse"></textarea>
+
+      <p class="question">Partager une expérience d’une petite victoire :</p>
+      <textarea name="petite_victoire" placeholder="Votre réponse"></textarea>
+    </section>
+
+    <section>
+      <h2>7 - Conclusion</h2>
+      <p class="question">Un mot pour conclure la matinée :</p>
+      <input type="text" name="mot_conclusion" placeholder="Votre réponse">
+
+      <p class="question">Y a-t-il un thème que vous souhaitez aborder lors du prochain Kafé Paran ?</p>
+      <textarea name="theme_prochain" placeholder="Votre réponse"></textarea>
+    </section>
+
+    <div class="actions">
+      <button type="button" onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+      <button class="secondary" type="reset">Effacer les réponses</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>
